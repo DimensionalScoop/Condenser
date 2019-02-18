@@ -1,0 +1,72 @@
+:doctype: book
+:stem: latexmath
+:reproducible:
+:source-highlighter: rouge
+:listing-caption: Listing
+:pdf-page-size: [160mm,100mm]
+
+
+== Introduction
+
+A paragraph followed by a simple list with square bullets.
+
+stem:[\sqrt{\sin{a\over b}} \cdot 10^{1000} k_{max} a_\text{john}]
+
+[square]
+* item 1
+* item 2
+
+
+== Code Example
+Here's how you say "`Hello, World!`" in Prawn:
+
+.Create a basic PDF document using Prawn
+[source,ruby]
+----
+require 'prawn'
+
+Prawn::Document.generate 'example.pdf' do
+  text 'Hello, World!'
+end
+----
+
+
+== List Comparison
+
+[.float-group]
+--
+[.left]
+.Good Things
+* pro 1
+* pro 2
+* pro 3
+
+[.right]
+.Bad Things
+* contra 1
+* contra 2
+--
+
+Text below
+
+
+== Pic columns
+
+[.float-group]
+--
+[.left]
+image::dorothy.png[pdfwidth=40%,float="left",title="A typical Dorothy",role="right"]
+
+[.right]
+* pro 1
+* pro 2
+--
+
+
+== A simple page
+
+Very simple indeed.
+
+
+== A Typical Dorothy
+image::dorothy.png[pdfwidth=80%,align="center"]
